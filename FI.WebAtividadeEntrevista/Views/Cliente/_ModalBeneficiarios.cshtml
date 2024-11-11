@@ -1,0 +1,44 @@
+﻿<div id="modalBeneficiarios" class="modal fade" tabindex="-1" aria-labelledby="modalBeneficiariosLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modalBeneficiariosLabel">Beneficiários</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form id="formBeneficiario">
+                    <div class="row">
+                        <div class="col-12 col-md-5 mb-3">
+                            <div class="form-group">
+                                <label for="cpf">CPF</label>
+                                <input type="text" class="form-control cpf" id="cpf" placeholder="Ex.: 123.456.789-00" maxlength="14">
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-5 mb-3">
+                            <div class="form-group">
+                                <label for="nome">Nome</label>
+                                <input type="text" class="form-control" id="nome" placeholder="Ex.: Nathan" maxlength="50">
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-2 d-flex align-items-end mb-3">
+                            <div class="form-group w-100">
+                                <button type="button" id="btnIncluir" class="btn btn-success w-100 d-flex justify-content-center">Incluir</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+                <table class="table table-striped mt-4" id="tabelaBeneficiarios">
+                    <thead>
+                        <tr>
+                            <th>CPF</th>
+                            <th>Nome</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody id="listaBeneficiarios">
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>

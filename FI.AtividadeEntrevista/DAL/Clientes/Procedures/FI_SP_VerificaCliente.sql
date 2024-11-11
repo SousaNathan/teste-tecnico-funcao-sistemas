@@ -1,0 +1,9 @@
+﻿CREATE PROC FI_SP_VerificaCliente
+    @CPF VARCHAR(14),
+    @Email VARCHAR(255)
+AS
+BEGIN
+    SELECT 1 
+    FROM CLIENTES 
+    WHERE CPF = @CPF OR Email = @Email
+END

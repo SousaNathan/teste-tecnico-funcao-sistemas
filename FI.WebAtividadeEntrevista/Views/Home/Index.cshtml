@@ -1,0 +1,99 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<main class="container my-4">
+    <section class="row" aria-labelledby="title">
+        <div class="col-12">
+            <h1 id="title" class="display-4">Teste Prático - Desenvolvedor .NET</h1>
+            <p class="lead">Bem-vindo ao teste prático para o cargo de Desenvolvedor .NET. Abaixo estão as tarefas e requisitos necessários para a realização deste teste.</p>
+        </div>
+    </section>
+
+    <!-- Seção de Objetivo do Teste -->
+    <section class="row my-4">
+        <div class="col-12">
+            <h2>Objetivo do Teste</h2>
+            <p>Avaliar o conhecimento técnico e a lógica de desenvolvimento para a vaga de desenvolvedor .NET.</p>
+        </div>
+    </section>
+
+    <!-- Seção de Requisitos -->
+    <section class="row my-4">
+        <div class="col-12">
+            <h2>Requisitos Necessários</h2>
+            <ul>
+                <li><strong>Solution:</strong> <a href="http://atende.funcao.com.br/download/FI.WebAtividadeEntrevista.zip" target="_blank">FI.WebAtividadeEntrevista.zip</a></li>
+                <li><strong>Visual Studio 2022:</strong> <a href="https://visualstudio.microsoft.com/pt-br/downloads/" target="_blank">Baixe aqui</a></li>
+                <li><strong>Observação:</strong> Ao instalar o Visual Studio, inclua as opções: “Pacote de direcionamento do .NET Framework 4.8”, “SDK do .NET Framework 4.8” e “SQL Server Express 2019 LocalDB”.</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Seção de Início do Teste -->
+    <section class="row my-4">
+        <div class="col-12">
+            <h2>Como Começar</h2>
+            <p>Após fornecer os requisitos necessários, descompacte o arquivo ZIP <strong>FI.WebAtividadeEntrevista.zip</strong>. Dentro, você encontrará a solution <strong>FI.WebAtividadeEntrevista.sln</strong> referente a um sistema de manutenção de dados de clientes. Ao executar o sistema, você verá a aba “Clientes” com a funcionalidade de incluir um novo cliente através do botão “Novo Cliente”.</p>
+        </div>
+    </section>
+
+    <!-- Seção de Tarefas -->
+    <section class="row my-4">
+        <div class="col-12">
+            <h2>Tarefas do Teste</h2>
+            <p>Com base no sistema fornecido, as seguintes implementações devem ser realizadas:</p>
+
+            <h3>1. Implementação do CPF do Cliente</h3>
+            <ul>
+                <li>Adicionar um novo campo denominado "CPF" na tela de cadastro/alteração de clientes.</li>
+                <li>O campo "CPF" deve ser obrigatório e seguir a formatação padrão de CPF (999.999.999-99).</li>
+                <li>Validar o CPF de acordo com o cálculo de verificação padrão.</li>
+                <li>Garantir que o CPF não seja duplicado no banco de dados.</li>
+                <li>Alterar o banco de dados para incluir o campo "CPF" na tabela <strong>CLIENTES</strong>.</li>
+            </ul>
+
+            <h3>2. Implementação do Botão Beneficiários</h3>
+            <ul>
+                <li>Adicionar um botão "Beneficiários" na tela de cadastro de clientes.</li>
+                <li>Ao clicar, abrir um pop-up para inclusão de "CPF" e "Nome do beneficiário".</li>
+                <li>Exibir um grid com os beneficiários cadastrados, permitindo a manutenção (alteração e exclusão).</li>
+                <li>Validar o CPF do beneficiário de acordo com o padrão (999.999.999-99) e garantir que o CPF não seja duplicado para o mesmo cliente.</li>
+                <li>Gravar os beneficiários na tabela <strong>BENEFICIARIOS</strong>, que inclui os campos: "ID", "CPF", "NOME" e "IDCLIENTE".</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Seção de Layout das Telas -->
+    <section class="row my-4">
+        <div class="col-12">
+            <h2>Layout das Telas</h2>
+            <p>Após implementar as funcionalidades acima, o layout das telas deverá ser organizado da seguinte forma:</p>
+            <ul>
+                <li><strong>Cadastro de Cliente:</strong> Tela de cadastro com o campo "CPF" e o botão "Beneficiários".</li>
+                <li><strong>Pop-up de Beneficiários:</strong> Pop-up com campos para CPF e Nome, além de um grid para manutenção de beneficiários.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="row my-4">
+        <div class="col-12">
+            <h2>Tarefas Realizadas</h2>
+            <p>Este teste envolveu a implementação de diversas funcionalidades, bem como a atualização e revisão do código base. As principais tarefas realizadas incluem:</p>
+            <ul>
+                <li>Implementação do campo <strong>CPF</strong> para os clientes, com validação de CPF e a formatação <strong>999.999.999-99</strong>.</li>
+                <li>Inclusão de um botão <strong>Beneficiários</strong> no cadastro de clientes, permitindo a inclusão, alteração e exclusão de beneficiários, com a validação do CPF do beneficiário.</li>
+                <li>Criação de novas tabelas no banco de dados para armazenar o campo <strong>CPF</strong> dos clientes e os dados dos beneficiários, com as devidas alterações nas estruturas existentes.</li>
+            </ul>
+
+            <p>Além disso, o projeto passou por uma atualização geral para melhorar a performance e compatibilidade com versões mais recentes das bibliotecas:</p>
+            <ul>
+                <li>Todos os pacotes do projeto foram atualizados para garantir a compatibilidade com as versões mais recentes.</li>
+                <li>O pacote do <strong>Bootstrap</strong> foi atualizado para a versão mais recente. O layout original apresentava conflitos com as classes do Bootstrap no HTML e com a versão utilizada originalmente. Para resolver esses conflitos, o framework foi atualizado e todas as classes do Bootstrap no código HTML foram revistas e alteradas para garantir que funcionassem corretamente com a nova versão.</li>
+                <li>Revisão de todos os componentes visuais para garantir que seguissem os novos padrões do Bootstrap, assegurando uma melhor responsividade e estrutura.</li>
+            </ul>
+
+            <p>O sistema agora está mais robusto, com todas as melhorias implementadas, pronto para seguir com as funcionalidades adicionais que venham a ser necessárias.</p>
+        </div>
+    </section>
+</main>
